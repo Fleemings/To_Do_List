@@ -1,5 +1,5 @@
 .footer {
-  height: 6.5rem;
+  height: 5.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -8,6 +8,6 @@
 }
 
 .footer span {
-  font-weight: bold;
+  font-weight: 400;
   color: #61dafb;
 }
