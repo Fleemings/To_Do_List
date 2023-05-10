@@ -1,10 +1,13 @@
 import React from 'react';
-import './App.css';
-
+import Header from './Components/Header/Header';
+import Footer from './Components/Footer/Footer';
+import AppStyle from './App.module.css'
 function App() {
   return (
     <div className="App">
-      <h1>TO DO LIST</h1>
+      <Header/>
+      <main className={AppStyle.main}></main>
+      <Footer/>
     </div>
   );
 }
