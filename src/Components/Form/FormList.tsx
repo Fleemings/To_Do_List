@@ -9,11 +9,13 @@ import Col from 'react-bootstrap/Col';
 export interface IFormListProps {
   taskList: ITask[];
   handleDelete(id: number): void;
+  handleEdit(task: ITask): void;
 }
 
 export default function FormList({
   taskList,
   handleDelete,
+  handleEdit,
 }: IFormListProps) {
   return (
     <>
@@ -35,7 +37,10 @@ export default function FormList({
                       Difficulty: {task.difficulty}
                     </ListGroup.Item>
                   </ListGroup>
-                  <i className='bi bi-pencil text-light bg-warning p-2 rounded '></i>
+                  <i
+                    className='bi bi-pencil text-light bg-warning p-2 rounded '
+                    onClick={() => handleEdit(task)}
+                  ></i>
                   <div className='vr' />
                   <i
                     className='bi bi-trash text-light bg-danger p-2  rounded'
